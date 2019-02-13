@@ -1,0 +1,125 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+	/* thanks to https://blog.fakedarren.com/2010/01/cross-browser-css-gradients/ */
+	/* and https://www.puremango.co.uk/2010/04/css-gradient/ */
+    /* fallback (Opera) */
+    background: #c6989f;
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #c6989f, #e9d6d6);
+    /* Chrome, Safari: */
+    background: -webkit-gradient(linear, left top, left bottom, from(#c6989f), to(#e9d6d6));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#c6989f', EndColorStr='#e9d6d6', GradientType=0);
+    
+    background-attachment:fixed;
+    overflow: auto;
+}
+
+#wrap {
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;
+	/* background: #ccc; */
+}
+
+#header {
+	padding: 5px 10px;
+	/* background:#ddd; */
+}
+
+#nav {
+	text-align: center;
+	padding: 5px 10px;
+	/* background:#c99; */
+}
+
+#main {
+	float: left;
+	width: 100%;
+	padding: 10px;
+	/* background:#9c9; */
+}
+
+#sidebar {
+	float: right;
+	width: 30%;
+	padding: 10px;
+	/* background:#c9c; */
+}
+
+* html #footer {
+	height: 1px;
+}
+
+#footer {
+	clear: both;
+	padding: 5px 10px;
+	text-align: center;
+	/* background:#cc9; */
+}
+
+#footer p {
+	margin: 0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: x-small;
+	font-weight: 100;
+	text-align: center;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: inherit;
+}
+
+#nav ul a {
+	padding-right: 32px;
+	padding-left: 32px;
+	line-height: 75px;
+	vertical-align: middle;
+	text-decoration: none;
+	font-family: frosty_font;
+	font-size: 25px;
+	color: #000000;
+}
+
+#nav ul a:hover {
+	color: #FFFFFF;
+}
+
+#nav li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    /* thanx to https://symphony-of-dot-net.blogspot.com/2010/03/making-css-custom-font-works-with-ie.html */
+	font-family: frosty_font;
+	/* MSIE: */
+    src: url('../../content/font/FROSTY.eot');
+    /* Mozilla, Chrome, Safari: */
+    src: local(FROSTY), url('../../content/font/FROSTY.TTF') format('opentype');
+}
+
+p {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   	font-weight: 300;
+}
+
+h1 {
+	margin: 0;
+	font-family: frosty_font;
+	font-size: xx-large;
+}
+
+h2 {
+	margin: 0 0 1em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   	font-size: x-large;
+}
